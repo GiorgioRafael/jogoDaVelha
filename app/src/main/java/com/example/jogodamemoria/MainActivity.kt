@@ -20,62 +20,97 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        fun enableBtns(){
+            binding.button1.isEnabled=true
+            binding.button2.isEnabled=true
+            binding.button3.isEnabled=true
+            binding.button4.isEnabled=true
+            binding.button5.isEnabled=true
+            binding.button6.isEnabled=true
+            binding.button7.isEnabled=true
+            binding.button8.isEnabled=true
+            binding.button9.isEnabled=true
+        }
+        fun disableBtns(){
+            binding.button1.isEnabled=false
+            binding.button2.isEnabled=false
+            binding.button3.isEnabled=false
+            binding.button4.isEnabled=false
+            binding.button5.isEnabled=false
+            binding.button6.isEnabled=false
+            binding.button7.isEnabled=false
+            binding.button8.isEnabled=false
+            binding.button9.isEnabled=false
 
+        }
 
         fun win() {
             //Vitorias do X
             if (binding.button1.text == "X" && binding.button2.text == "X" && binding.button3.text == "X") {
                 binding.txtGanhador.text="X GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button4.text == "X" && binding.button5.text == "X" && binding.button6.text == "X") {
                 binding.txtGanhador.text="X GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button7.text == "X" && binding.button8.text == "X" && binding.button9.text == "X") {
                 binding.txtGanhador.text="X GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button1.text == "X" && binding.button4.text == "X" && binding.button7.text == "X") {
                 binding.txtGanhador.text="X GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button2.text == "X" && binding.button5.text == "X" && binding.button8.text == "X") {
                 binding.txtGanhador.text="X GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button3.text == "X" && binding.button6.text == "X" && binding.button9.text == "X") {
                 binding.txtGanhador.text="X GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button1.text == "X" && binding.button5.text == "X" && binding.button9.text == "X") {
                 binding.txtGanhador.text="X GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button3.text == "X" && binding.button5.text == "X" && binding.button7.text == "X") {
                 binding.txtGanhador.text="X GANHOU A RODADA!"
+                disableBtns()
             }
 
             //VITORIAS O
             if (binding.button1.text == "O" && binding.button2.text == "O" && binding.button3.text == "O") {
                 binding.txtGanhador.text="O GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button4.text == "O" && binding.button5.text == "O" && binding.button6.text == "O") {
                 binding.txtGanhador.text="O GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button7.text == "O" && binding.button8.text == "O" && binding.button9.text == "O") {
                 binding.txtGanhador.text="O GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button1.text == "O" && binding.button4.text == "O" && binding.button7.text == "O") {
                 binding.txtGanhador.text="O GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button2.text == "O" && binding.button5.text == "O" && binding.button8.text == "O") {
                 binding.txtGanhador.text="O GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button3.text == "O" && binding.button6.text == "O" && binding.button9.text == "O") {
                 binding.txtGanhador.text="O GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button1.text == "O" && binding.button5.text == "O" && binding.button9.text == "O") {
                 binding.txtGanhador.text="O GANHOU A RODADA!"
+                disableBtns()
             }
             if (binding.button3.text == "O" && binding.button5.text == "O" && binding.button7.text == "O") {
                 binding.txtGanhador.text="O GANHOU A RODADA!"
-            }
-            if (binding.txtGanhador.text=="X GANHOU A RODADA" || binding.txtGanhador.text=="O GANHOU A RODADA!"){
-
+                disableBtns()
             }
 
             //Funcao de resetar
@@ -90,6 +125,7 @@ class MainActivity : AppCompatActivity() {
             binding.button8.text=""
             binding.button9.text=""
             binding.txtGanhador.text=""
+                enableBtns()
 
         }
             //implementacao do resetar
@@ -207,6 +243,7 @@ class MainActivity : AppCompatActivity() {
                     player = "p1"
                 }
             }
+
             win()
         }
 
