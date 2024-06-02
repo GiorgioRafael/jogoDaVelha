@@ -208,4 +208,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/txtrodada"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rodada:"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitulo" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

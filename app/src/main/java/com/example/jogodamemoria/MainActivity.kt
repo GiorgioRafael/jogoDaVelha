@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(binding.root)
 
-
+        var round = 0
         fun enableBtns(){
             binding.button1.isEnabled=true
             binding.button2.isEnabled=true
@@ -42,6 +42,12 @@ class MainActivity : AppCompatActivity() {
             binding.button8.isEnabled=false
             binding.button9.isEnabled=false
 
+        }
+        fun velha() {
+            if (round == 9 && binding.txtGanhador.text=="") {
+                    disableBtns()
+                    binding.txtGanhador.text = "O JOGO EMPATOU: VELHA!"
+            }
         }
 
         fun win() {
@@ -125,6 +131,9 @@ class MainActivity : AppCompatActivity() {
             binding.button8.text=""
             binding.button9.text=""
             binding.txtGanhador.text=""
+                round = 0
+                player="p1"
+                binding.txtrodada.text= "Rodada:$round"
                 enableBtns()
 
         }
@@ -147,7 +156,10 @@ class MainActivity : AppCompatActivity() {
                     player = "p1"
                 }
             }
+            round+=1
             win()
+            velha()
+            binding.txtrodada.text= "Rodada:$round"
         }
         binding.button2.setOnClickListener {
             if (binding.button2.text == "") {
@@ -159,7 +171,10 @@ class MainActivity : AppCompatActivity() {
                     player = "p1"
                 }
             }
+            round+=1
             win()
+            velha()
+            binding.txtrodada.text= "Rodada:$round"
         }
         binding.button3.setOnClickListener {
             if (binding.button3.text == "") {
@@ -171,7 +186,10 @@ class MainActivity : AppCompatActivity() {
                     player = "p1"
                 }
             }
+            round+=1
             win()
+            velha()
+            binding.txtrodada.text= "Rodada:$round"
         }
         binding.button4.setOnClickListener {
             if (binding.button4.text == "") {
@@ -183,7 +201,10 @@ class MainActivity : AppCompatActivity() {
                     player = "p1"
                 }
             }
+            round+=1
             win()
+            velha()
+            binding.txtrodada.text= "Rodada:$round"
         }
         binding.button5.setOnClickListener {
             if (binding.button5.text == "") {
@@ -195,7 +216,10 @@ class MainActivity : AppCompatActivity() {
                     player = "p1"
                 }
             }
+            round+=1
             win()
+            velha()
+            binding.txtrodada.text= "Rodada:$round"
         }
         binding.button6.setOnClickListener {
             if (binding.button6.text == "") {
@@ -207,7 +231,10 @@ class MainActivity : AppCompatActivity() {
                     player = "p1"
                 }
             }
+            round+=1
             win()
+            velha()
+            binding.txtrodada.text= "Rodada:$round"
         }
         binding.button7.setOnClickListener {
             if (binding.button7.text == "") {
@@ -219,7 +246,10 @@ class MainActivity : AppCompatActivity() {
                     player = "p1"
                 }
             }
+            round+=1
             win()
+            velha()
+            binding.txtrodada.text= "Rodada:$round"
         }
         binding.button8.setOnClickListener {
             if (binding.button8.text == "") {
@@ -231,7 +261,10 @@ class MainActivity : AppCompatActivity() {
                     player = "p1"
                 }
             }
+            round+=1
             win()
+            velha()
+            binding.txtrodada.text= "Rodada:$round"
         }
         binding.button9.setOnClickListener {
             if (binding.button9.text == "") {
@@ -243,8 +276,10 @@ class MainActivity : AppCompatActivity() {
                     player = "p1"
                 }
             }
-
+            round+=1
             win()
+            velha()
+            binding.txtrodada.text= "Rodada:$round"
         }
 
         fun toast(msg: String) {
