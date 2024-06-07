@@ -53,69 +53,69 @@ class MainActivity : AppCompatActivity() {
         fun win() {
             //Vitorias do X
             if (binding.button1.text == "X" && binding.button2.text == "X" && binding.button3.text == "X") {
-                binding.txtGanhador.text="X GANHOU A RODADA!"
+                binding.txtGanhador.text="X GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button4.text == "X" && binding.button5.text == "X" && binding.button6.text == "X") {
-                binding.txtGanhador.text="X GANHOU A RODADA!"
+                binding.txtGanhador.text="X GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button7.text == "X" && binding.button8.text == "X" && binding.button9.text == "X") {
-                binding.txtGanhador.text="X GANHOU A RODADA!"
+                binding.txtGanhador.text="X GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button1.text == "X" && binding.button4.text == "X" && binding.button7.text == "X") {
-                binding.txtGanhador.text="X GANHOU A RODADA!"
+                binding.txtGanhador.text="X GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button2.text == "X" && binding.button5.text == "X" && binding.button8.text == "X") {
-                binding.txtGanhador.text="X GANHOU A RODADA!"
+                binding.txtGanhador.text="X GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button3.text == "X" && binding.button6.text == "X" && binding.button9.text == "X") {
-                binding.txtGanhador.text="X GANHOU A RODADA!"
+                binding.txtGanhador.text="X GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button1.text == "X" && binding.button5.text == "X" && binding.button9.text == "X") {
-                binding.txtGanhador.text="X GANHOU A RODADA!"
+                binding.txtGanhador.text="X GANHOU A PARTIDA}!"
                 disableBtns()
             }
             if (binding.button3.text == "X" && binding.button5.text == "X" && binding.button7.text == "X") {
-                binding.txtGanhador.text="X GANHOU A RODADA!"
+                binding.txtGanhador.text="X GANHOU A PARTIDA!"
                 disableBtns()
             }
 
             //VITORIAS O
             if (binding.button1.text == "O" && binding.button2.text == "O" && binding.button3.text == "O") {
-                binding.txtGanhador.text="O GANHOU A RODADA!"
+                binding.txtGanhador.text="O GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button4.text == "O" && binding.button5.text == "O" && binding.button6.text == "O") {
-                binding.txtGanhador.text="O GANHOU A RODADA!"
+                binding.txtGanhador.text="O GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button7.text == "O" && binding.button8.text == "O" && binding.button9.text == "O") {
-                binding.txtGanhador.text="O GANHOU A RODADA!"
+                binding.txtGanhador.text="O GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button1.text == "O" && binding.button4.text == "O" && binding.button7.text == "O") {
-                binding.txtGanhador.text="O GANHOU A RODADA!"
+                binding.txtGanhador.text="O GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button2.text == "O" && binding.button5.text == "O" && binding.button8.text == "O") {
-                binding.txtGanhador.text="O GANHOU A RODADA!"
+                binding.txtGanhador.text="O GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button3.text == "O" && binding.button6.text == "O" && binding.button9.text == "O") {
-                binding.txtGanhador.text="O GANHOU A RODADA!"
+                binding.txtGanhador.text="O GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button1.text == "O" && binding.button5.text == "O" && binding.button9.text == "O") {
-                binding.txtGanhador.text="O GANHOU A RODADA!"
+                binding.txtGanhador.text="O GANHOU A PARTIDA!"
                 disableBtns()
             }
             if (binding.button3.text == "O" && binding.button5.text == "O" && binding.button7.text == "O") {
-                binding.txtGanhador.text="O GANHOU A RODADA!"
+                binding.txtGanhador.text="O GANHOU A PARTIDA!"
                 disableBtns()
             }
 
