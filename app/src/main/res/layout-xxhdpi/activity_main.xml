@@ -12,7 +12,7 @@
         android:id="@+id/txtTitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="25dp"
         android:fontFamily="@font/roboto"
         android:shadowColor="#FFFFFF"
         android:text="Jogo da velha"
@@ -131,11 +131,9 @@
 
     <TextView
         android:id="@+id/txtGanhador"
-        android:layout_width="355dp"
-        android:layout_height="109dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="28dp"
+        android:layout_width="266dp"
+        android:layout_height="105dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/roboto"
         android:gravity="center"
         android:paddingStart="30dp"
@@ -145,14 +143,13 @@
         android:textColor="#FFFFFF"
         android:textSize="40dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gridLayout" />
 
     <Button
         android:id="@+id/btndivider1"
         android:layout_width="20dp"
-        android:layout_height="380dp"
+        android:layout_height="330dp"
         android:layout_marginEnd="111dp"
         android:backgroundTint="@color/Navy_Blue"
         android:background="@drawable/radius"
@@ -166,7 +163,7 @@
     <Button
         android:id="@+id/btndivider2"
         android:layout_width="20dp"
-        android:layout_height="380dp"
+        android:layout_height="330dp"
         android:layout_marginStart="111dp"
         android:background="@drawable/radius"
         android:backgroundTint="@color/Navy_Blue"
@@ -178,7 +175,7 @@
         app:layout_constraintTop_toTopOf="parent" />
     <Button
         android:id="@+id/btndivider3"
-        android:layout_width="380dp"
+        android:layout_width="330dp"
         android:layout_height="20dp"
         android:clickable="false"
         android:background="@drawable/radius"
@@ -191,7 +188,7 @@
 
     <Button
         android:id="@+id/btndivider4"
-        android:layout_width="380dp"
+        android:layout_width="330dp"
         android:layout_height="20dp"
         android:clickable="false"
         android:background="@drawable/radius"
