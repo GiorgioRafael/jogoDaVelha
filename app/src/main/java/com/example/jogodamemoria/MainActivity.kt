@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         fun velha() {
             if (round == 9 && binding.txtGanhador.text=="") {
                     disableBtns()
-                    binding.txtGanhador.text = "O JOGO EMPATOU: VELHA!"
+                    binding.txtGanhador.text = "O JOGO EMPATOU!"
             }
         }
 
