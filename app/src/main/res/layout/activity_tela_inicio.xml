@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edtP1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Jogador 1"/>
+
+    <EditText
+        android:id="@+id/edtP2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Jogador 2"
+        android:paddingTop="20dp" />
+
+    <Button
+        android:id="@+id/btncomecar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="@color/Navy_Blue"
+        android:text="Iniciar jogo"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btnplacar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/radius"
+        android:backgroundTint="@color/Navy_Blue"
+        android:text="Placar"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+</LinearLayout>
